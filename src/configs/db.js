@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-const Log = require("../models/Log");
 const addLog = require("../middleware/logger");
 require("dotenv").config();
 const db = process.env.mongoURI;

@@ -14,7 +14,7 @@ connectDB();
 app.use(express.json());
 
 // Define Routes
-app.use("/url", require("./src/routes/index"));
+app.use("/url", require("./src/routes/getUrl"));
 app.use("/api/url", require("./src/routes/url"));
 app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerJSDoc));
 
